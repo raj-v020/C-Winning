@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmer Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="sidebar">
+        <ul>
+          <li>Dashboard</li>
+          <li>
+            <a href="education.html">Educational Resource</a>
+          </li>
+
+          <li><a href="community.html">Community</a></li>
+          <li><a href="About.html">About</a></li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="chart-container">
+          <h2>Crop Growth</h2>
+          <canvas id="cropGrowthChart" class="chart"></canvas>
+        </div>
+
+        <div class="chart-container">
+          <h2>Soil Health</h2>
+          <canvas id="soilHealthChart" class="chart"></canvas>
+        </div>
+
+        <div class="chart-container">
+          <h2>Environmental Data</h2>
+          <canvas id="environmentalDataChart" class="chart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart.js"></script>
+  </body>
+</html>
